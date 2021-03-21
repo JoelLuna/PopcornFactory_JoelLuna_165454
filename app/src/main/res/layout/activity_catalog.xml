@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Dark"
+    tools:context=".CatalogActivity">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/movie_title_cell"
+        android:text="@string/series"
+        android:textColor="@color/Yellow"
+        android:textSize="30dp"
+        />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="7dp"
+        android:src="@drawable/linea"
+        android:layout_marginRight="2dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="right"/>
+
+    <GridView
+        android:id="@+id/movies_catalog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="70dp"
+        android:gravity="center"
+        android:numColumns="3"
+        android:paddingHorizontal="4dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movies"
+        android:textSize="30dp"
+        />
+
+</LinearLayout>
